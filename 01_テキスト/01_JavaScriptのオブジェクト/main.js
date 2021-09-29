@@ -14,3 +14,18 @@ const hikakin = {
 
 // 練習問題
 // hikakin オブジェクトに入っている sayHello メソッドを実行してください。
+
+
+const hajimen = {
+  name: "はじめしゃちょー",
+  age: "知らん",
+  hobbies: ["ゲーム","カードゲーム","ようつべ"],
+  isHappy: true,
+  address: {
+    country: "日本",
+    city: "静岡、もしくは東京"
+  },
+  sayHello: function() {
+    console.log("ブンブンハロー YouTube")
+  }
+}
