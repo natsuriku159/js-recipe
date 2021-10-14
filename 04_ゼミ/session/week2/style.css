@@ -1,0 +1,36 @@
+.container {
+    width: 250px;
+    height: 200px;
+    background-color: skyblue;
+    overflow-x: auto;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow:  1px 1px  gray;
+    background-color: white;
+}
+
+.card:hover {
+    background-color: rgb(221, 211, 211);
+}
+
+.card:hover .delete {
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+
+    opacity: 0.5;
+    color: #f00;
+}
+
+.card:hover .delete:after {
+    content: "削除";
+}
+
+.card:hover .delete:hover {
+    opacity: 1;
+}

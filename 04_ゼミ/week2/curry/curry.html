@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>恵比寿の美味しいカレー屋さん</title>
+    </head>
+    <body>
+        <section class="hero">
+        <figure class="hero__figure">
+            <img
+            class="hero__figure__img"
+            src="https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=600"
+            alt="カレーの写真"
+            />
+        </figure>
+        </section>
+        <section class="about">
+        <div class="about__wrapper">
+            <h1 class="about_wrapper_title">恵比寿の美味しいカレー屋さん</h1>
+            <p class="about_wrapper_text">
+            日本にカレーが伝えられたのは1868年で、イギリスの商船が既成のカレー粉を持ち込んだのが始まりとされている[16]。その後1872年には仮名垣魯文によって編纂された『西洋料理通』が出版され、カレーレシピが紹介されることで広く浸透した[16]。定着の理由としては時代背景として肉食の奨励とともに西洋文化の取り込み・吸収に貪欲であったことに加え、野菜、肉、米をまとめて摂取可能な上に安上がりで食べ応えがあったことが挙げられている[17]。イギリスから伝わったものに小麦粉を加えたとろみのあるカレーを米飯（ライス）の上に掛けて食する「カレーライス」が普及しており、それぞれの地域や家庭、店舗等によって様々にアレンジされたカレーが存在する。
+            スープ状のカレーや、カレー味のスープはスープカレーと呼ばれ、ハウス食品のレシピの例では、使用される具材は固形カレーの素、タマネギ、ロースハム、キャベツ、サラダ油、水、塩、胡椒である。グリーンカレーの名で販売する店舗もあり、インドの地方やタイのカレーは同様のカレーと呼ぶがスープ状の物であり、スープ状である事からカレースープと呼ぶ人もいる[18]。「カレー」と称しているがスープの店もある[19]。日清食品からカップのグリーンカレーのスープも販売されている。地元産素材を使う地域の町おこしとして売り出される例もみられる[20][21]。
+            そのほかにも、日本独自のカレー料理（食品）は多く、カレー南蛮（カレー味の汁をかけたかけそば）などの麺類、ドライカレー、カレーまん、カレーパン、カレーコロッケなどがある。カレー味に調味したスナック菓子も多い。
+            </p>
+        </div>
+        </section>
+    </body>
+    </html>
+
+    <!-- <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>WebExpertコーステンプレート</title>
+    </head>
+    <body>
+        <h1>自販機</h1>
+        <section>
+        <h3>自販機にお金を入れる</h3>
+        <button id="add-button-100">
+            100円入れる
+        </button>
+        <h4>↓財布↓</h4>
+        <div id="display-saifu">1000</div>
+        <h4>↓投入金額↓</h4>
+        <div id="display-jihanki-money">0</div>
+        </section>
+        <section>
+        <h3>お釣り</h3>
+        <button id="return-button">払い戻し</button>
+        </section>
+        <section>
+        <h3>商品を買う</h3>
+        <button id="buy-button-tea">お茶(100円)</button>
+        </section>
+        <section>
+        <h3>買った商品</h3>
+        <div id="display-items"></div>
+        </section>
+        <script>
+        // HTML要素を取得する
+        const buyButtonTea = document.getElementById("buy-button-tea");
+        const displayItems = document.getElementById("display-items");
+        const displaySaifu = document.getElementById("display-saifu");
+        const displayJihankiMoney = document.getElementById(
+            "display-jihanki-money"
+        );
+        const addButton100 = document.getElementById("add-button-100");
+        const returnButton = document.getElementById("return-button");
+
+        let saifu = 1000;
+        let jihankiMoney = 0;
+
+        addButton100.onclick = function () {
+            if (saifu >= 100) {
+            saifu -= 100;
+            jihankiMoney += 100;
+            displaySaifu.textContent = saifu;
+            displayJihankiMoney.textContent = jihankiMoney;
+            }
+        };
+
+        returnButton.onclick = function () {
+            saifu += jihankiMoney;
+            jihankiMoney = 0;
+            displaySaifu.textContent = saifu;
+            displayJihankiMoney.textContent = jihankiMoney;
+        };
+        // buyButtonTea を押した時の処理
+        buyButtonTea.onclick = function () {
+            if (jihankiMoney >= 100) {
+            jihankiMoney -= 100;
+            displayJihankiMoney.textContent = jihankiMoney;
+            displayItems.textContent += "🍵";
+            }
+        };
+        </script>
+    </body>
+</html> -->
+
+<!-- === このメッセージは消しても構いません === -->
+
+<!-- GeekSalon WebExpertコースのペアプロで使用するためのテンプレートです。 -->
+<!-- ✅ 👈のメニューから一番下の「👬」のアイコンを選んで -->
+<!--    Live Modeを「Everyone cab edit」に変更した後、 -->
+<!--    「You're live!」の下、「Stop Session」の上、にあるリンクをShareしましょう -->
+<!-- ✅ CodeSandBoxはVS Codeとほぼ同じ様に扱えます。 -->
+<!-- ✅ 👉にある画面が実行画面です。 -->
+<!-- ✅ 👉の👇にある「Console」が実行時のConsoleになります。 -->
+<!--    たまに挙動がおかしい時があるので気をつけましょう。 -->
+
+<!-- =============================== -->
