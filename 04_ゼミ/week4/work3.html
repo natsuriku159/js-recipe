@@ -246,6 +246,82 @@
       });
     </script>
 
+    <!-- 8. 発展 -->
+    <section id="app8">
+        <h3>自販機</h3>
+  
+        <div class="container">
+          <div class="money">
+            <div>{{ saifuMoney }}</div>
+            <div>{{ jihankiMoney }}</div>
+            <button v-on:click="okaneIreru" v-bind:disabled="saifuMoney === 0">
+              お金投入
+            </button>
+            <button v-on:click="oturi" v-bind:disabled="jihankiMoney === 0">
+              お釣り
+            </button>
+          </div>
+          <hr />
+          <div class="drinks">
+            <div v-for="drink in drinks" class="drink">
+              <div>{{ drink.name }}（{{drink.stock}}）</div>
+              <button
+                v-on:click="kau(drink)"
+                v-bind:disabled="drink.stock === 0 || jihankiMoney < drink.price"
+              >
+                {{ drink.price }}円
+              </button>
+            </div>
+          </div>
+  
+          <hr />
+  
+          <span v-for="icon in kattaDrinkIcons">{{ icon }}</span>
+        </div>
+      </section>
+  
+      <script>
+        new Vue({
+          el: "#app8",
+          data: {
+            saifuMoney: 1000,
+            jihankiMoney: 0,
+            drinks: [
+              {
+                name: "お茶",
+                price: 120,
+                icon: "🍵",
+                stock: 3
+              },
+              {
+                name: "水",
+                price: 200,
+                icon: "🚰",
+                stock: 3
+              }
+            ],
+            kattaDrinkIcons: []
+          },
+          methods: {
+            okaneIreru: function () {
+              this.saifuMoney -= 100;
+              this.jihankiMoney += 100;
+            },
+            kau: function (drink) {
+              if (drink.stock > 0) {
+                drink.stock -= 1;
+                this.jihankiMoney -= drink.price;
+                this.kattaDrinkIcons.push(drink.icon);
+              }
+            },
+            oturi: function () {
+              this.saifuMoney += this.jihankiMoney;
+              this.jihankiMoney = 0;
+            }
+          }
+        });
+      </script>
+
     <!-- === このメッセージは消しても構いません === -->
 
     <!-- ✅ 👈のメニューから一番下の「👬」のアイコンを選んで -->
